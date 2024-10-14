@@ -54,7 +54,7 @@ export default function Home() {
     <div style={{display: "flex", justifyContent: 'center', alignItems: 'center', height: '100vh', width: '100vw'}}>
       <ul>
         {data.map((item, i) => (
-          <li key={item.name} onClick={() => handleOptionCLick(i)}>
+          <li key={item.name} style={{cursor: 'pointer'}} onClick={() => handleOptionCLick(i)}>
             {item.name}
           </li>
         ))}
