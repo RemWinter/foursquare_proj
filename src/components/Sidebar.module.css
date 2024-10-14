@@ -1,0 +1,26 @@
+.sideBarContainer {
+  background-color: rgb(60, 60, 60);
+  height: 100%;
+  width: 40%;
+  position: absolute;
+  right: -100%;
+  /* right: 0; */
+  transition: 1s right;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 20px 10px;
+  align-items: center;
+}
+
+.sideBarContainer.active {
+  right: 0;
+}
+
+.sideBarContainer a {
+  text-align: center;
+  width: fit-content;
+  background-color: rgb(146, 204, 255);
+  border-radius: 4px;
+  padding: 10px 20px;
+}
